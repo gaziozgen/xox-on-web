@@ -1,0 +1,104 @@
+.player1 {
+    background-color: #FD5825;
+    color: #F7EFE5;
+    font-size: 80px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+
+}
+
+.player2 {
+    background-color: #3FABAF;
+    color: #F7EFE5;
+    font-size: 80px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.home {
+    background-color: #222222;
+    border-radius: 10px;
+    margin: 8px;
+    color: #F7EFE5;
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+}
+
+.home:hover {
+    border: solid 2px #222222;
+    padding: 3px;
+    background-color: #F7EFE5;
+    color: #222222;
+
+}
+
+.game {
+    text-align: center;
+}
+
+.unit {
+    border: 1px solid #F7EFE5;
+    border-radius: 10px;
+    background-color: #222222;
+    color: #F7EFE5;
+    padding: 0px;
+}
+
+.icon {
+    font-family: 'Flamenco', cursive;
+}
+
+.valid {
+    color: #222222 !important;
+}
+
+.valid :hover {
+    color: rgb(77, 77, 77);
+}
+
+.orange {
+    color: #FD5825;
+}
+
+.blue {
+    color: #3FABAF;
+}
+
+.final {
+    background-color: #222222;
+    color: #F7EFE5;
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.btnP {
+    display: block;
+    background-color: #FD5825;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 2px;
+}
+
+.btnN {
+    display: block;
+    background-color: #3FABAF;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 2px;
+}
+
+.hov:hover {
+    border: #3FABAF 2px solid;
+    color: #FD5825;
+    background-color: #F7EFE5;
+    padding: 0px;
+
+}
+

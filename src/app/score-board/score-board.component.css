@@ -1,0 +1,48 @@
+h3 {
+    font-size: 45px;
+    text-align: center;
+    color: #222222;
+}
+
+.user {
+    background-color: #222222;
+    color: #F7EFE5;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.name {
+    color: #3FABAF;
+}
+
+.score {
+    color: #FD5825;
+}
+
+.home {
+    background-color: #222222;
+    border-radius: 10px;
+    margin: 8px;
+    color: #F7EFE5;
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+}
+
+.home:hover {
+    border: solid 2px #222222;
+    padding: 3px;
+    background-color: #F7EFE5;
+    color: #222222;
+
+}
+
+/* .user:hover {
+    background-color: #F7EFE5;
+    color: #222222;
+    border: 2px solid #222222;
+    padding: 8px;
+} */

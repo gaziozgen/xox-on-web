@@ -1,0 +1,65 @@
+<div style="text-align: center;">
+  <img src="assets/images/logo.png" class="logo" alt="Logo">
+</div>
+
+<div *ngIf="username" class="section login" routerLink="/profile">
+  <span>{{username}}</span>
+</div>
+
+<div *ngIf="!username" class="section login" routerLink="/auth">
+  <span>Login / Sign up</span>
+</div>
+
+<div data-toggle="modal" data-target="#myModal" class="section play">
+  <span>Play</span>
+</div>
+
+<div class="section sboard" routerLink="/scoreboard">
+  <span>Score Board</span>
+</div>
+
+<!--  type="button"  -->
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Which Mode Do You Prefer?</h4>
+        <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-6">
+            <div *ngIf="username">
+              <div class="box" data-dismiss="modal" routerLink="/game/pvp">
+                <span class="text">P v P<br><i class="fas fa-user"></i> vs <i class="fas fa-user"></i></span>
+              </div>
+            </div>
+            <div *ngIf="!username">
+              <div class="box" data-dismiss="modal" routerLink="/auth">
+                <span class="text">Login for<br>P v P</span>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-sm-6" data-dismiss="modal" routerLink="/game/ai">
+            <div class="box">
+              <span class="text">P v AI<br><i class="fas fa-user"></i> vs <i class="fas fa-desktop"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn gbutton" data-dismiss="modal">Go Back</button>
+      </div>
+      
+    </div>
+  </div>
+</div>

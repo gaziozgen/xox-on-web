@@ -1,0 +1,78 @@
+.section {
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 40px;
+    height: 100px;
+    padding-top: 20px;
+}
+
+.section:hover {
+    border: 5px solid #3FABAF;
+    color: #FD5825;
+    background: #F7EFE5;
+    padding-top: 15px;
+}
+
+.login {
+    background-color: #FD5825;
+    color: #F7EFE5;
+}
+
+.play {
+    background-color: #222222;
+    color: #F7EFE5;
+}
+
+.sboard {
+    background-color: #3FABAF;
+    color: #F7EFE5;
+}
+
+.logo {
+    height: 300px;
+}
+
+.box {
+    background-color: #222222;
+    color: #F7EFE5;
+    height: 200px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.box:hover {
+    border: #222222 solid 10px;
+    color: #222222;
+    background-color: #F7EFE5;
+    padding: 0px;
+}
+
+.text {
+    font-size: 60px;
+    display: block;
+}
+
+.modal-content {
+    background-color: #F7EFE5;
+}
+
+.modal-title {
+    font-size: 40px !important;
+}
+
+.modal-header {
+    margin: 0 auto 0 auto;
+}
+
+.modal-footer {
+    margin: 0 auto 0 auto;
+}
+
+.gbutton {
+    background-color: #FD5825;
+    color: #F7EFE5;
+    font-size: 30px;
+}

@@ -1,0 +1,38 @@
+.menu {
+    background-color: #222222;
+    border: 3px #F7EFE5 solid;
+    border-radius: 10px;
+    text-align: center;
+    color: #F7EFE5;
+    font-size: 20px;
+    height: 50px;
+    padding-top: 6px;
+
+}
+
+.active {
+    background-color: #FD5825;
+}
+
+.form {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.buttonG {
+    background-color: #FD5825;
+    color: #F7EFE5;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.logo {
+    height: 200px;
+}
+
+label {
+    font-size: 20px;
+    color: #222222;
+    
+}

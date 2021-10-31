@@ -1,0 +1,12 @@
+<div *ngIf="user" class="profile">
+  <h2>{{user.nickname}}</h2>
+  <span>score: {{user.score}}</span>
+  <span>win: {{user.win}}</span>
+  <span>draw: {{user.draw}}</span>
+  <span>lose: {{user.lose}}</span>
+  <span>total game: {{user.total}}</span>
+  <span>sign up date: {{user.date | date:shortDate }}</span>
+  <div class="btn out" (click)="logout()">Logout</div>
+  <div class="btn back" (click)="goBack()">Go Back</div>
+  <div class="btn delete" (click)="delete()">Delete Scores</div>
+</div>

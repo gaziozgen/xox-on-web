@@ -1,0 +1,54 @@
+
+<div class="row">
+  <div class="col-sm-3">
+    <div class="player1">
+      <span><i class="fas fa-user"></i><br><br><br></span>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="home" (click)="quit()" routerLink="/">
+      <i class="fas fa-home"></i>
+    </div>
+    <div id="game" class="game">
+      <div class="row" *ngFor="let row of board; let i = index">
+        <div class="col-sm-4 unit" [class.valid]="board[i][j] == 0" [class.orange]="board[i][j] == 3"
+        [class.blue]="board[i][j] == 4" id="unit" *ngFor="let col of board[i]; let j = index">
+          <div (click)="choice(i,j)" *ngIf="board[i][j] == 0">
+            <span class="icon">X</span>
+          </div>
+          <div *ngIf="board[i][j] == 1">
+            <span class="icon">X</span>
+          </div>
+          <div *ngIf="board[i][j] == 2">
+            <span class="icon">O</span>
+          </div>
+          <div *ngIf="board[i][j] == 3">
+            <span class="icon">X</span>
+          </div>
+          <div *ngIf="board[i][j] == 4">
+            <span class="icon">O</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="final">
+      <div class="final">
+        <span>Final</span><br>
+        <span>{{finalText}}</span><br>
+        <div *ngIf="username" class="btnP hov" (click)="quit()" routerLink="/profile">profile</div>
+        <div class="btnN hov" (click)="newGame()">new game</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="player2">
+      <div *ngIf="mode === 'ai'">
+        <span><i class="fas fa-desktop"></i><br><br><br></span>
+      </div>
+      <div *ngIf="mode === 'pvp'">
+        <span><i class="fas fa-user"></i><br><br><br></span>
+      </div>
+    </div>
+  </div>
+</div>
+
